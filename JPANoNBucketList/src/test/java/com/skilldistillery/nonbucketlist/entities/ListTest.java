@@ -49,6 +49,7 @@ public class ListTest {
 	
 	@Test
 	void test_Category_Mapping() {
+		
 		assertEquals("skydiving", list.getId());
 		assertEquals(1, list.getId());
 	}

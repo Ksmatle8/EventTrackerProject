@@ -22,7 +22,12 @@ DROP TABLE IF EXISTS `bucket` ;
 
 CREATE TABLE IF NOT EXISTS `bucket` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `something` VARCHAR(45) NULL,
+  `activity` VARCHAR(45) NULL,
+  `description` VARCHAR(1000) NULL,
+  `level_hate` INT NULL,
+  `active` TINYINT NULL DEFAULT 0,
+  `how_happened` VARCHAR(45) NULL,
+  `how_experience` VARCHAR(45) NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -42,8 +47,8 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `nonbucketlistdb`;
-INSERT INTO `bucket` (`id`, `something`) VALUES (1, 'Mow the lawn');
-INSERT INTO `bucket` (`id`, `something`) VALUES (2, 'poop in public');
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (1, 'Mow the lawn', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (2, 'poop in public', NULL, NULL, NULL, NULL, NULL);
 
 COMMIT;
 
