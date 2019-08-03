@@ -47,8 +47,16 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `nonbucketlistdb`;
-INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (1, 'Mow the lawn', NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (2, 'poop in public', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (1, 'Mow the lawn', 'Never want to have to push, ride or anything with mowing the lawn.', 3, 0, NULL, NULL);
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (2, 'Wrestle a Bear', 'Dont want to because i might die', 5, 0, NULL, NULL);
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (3, 'Skydiving', 'Have a fear of falling', 2, 1, NULL, NULL);
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (4, 'Hang Gliding', NULL, 1, 0, NULL, NULL);
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (5, 'Surfing', NULL, 1, 0, NULL, NULL);
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (6, NULL, NULL, 1, 0, NULL, NULL);
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (7, NULL, NULL, 1, 0, NULL, NULL);
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (8, NULL, NULL, 1, 0, NULL, NULL);
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (9, NULL, NULL, 1, 0, NULL, NULL);
+INSERT INTO `bucket` (`id`, `activity`, `description`, `level_hate`, `active`, `how_happened`, `how_experience`) VALUES (10, 'Swing with Sharks', 'Dont even want to do it in a cage neve4r', 4, 0, NULL, NULL);
 
 COMMIT;
 

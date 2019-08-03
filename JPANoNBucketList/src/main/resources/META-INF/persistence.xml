@@ -8,7 +8,7 @@
     <provider>org.hibernate.jpa.HibernatePersistenceProvider
     </provider>
     
-	<class>com.skilldistillery.nonbucketlist.entities.hello</class>
+	<class>com.skilldistillery.nonbucketlist.entities.Bucket</class>
 	
 
     <properties>

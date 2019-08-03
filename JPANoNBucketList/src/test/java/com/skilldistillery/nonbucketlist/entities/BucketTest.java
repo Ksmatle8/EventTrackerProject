@@ -13,15 +13,15 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class ListTest {
+public class BucketTest {
 	
 	private static EntityManagerFactory emf;
 	private EntityManager em;
-	private List list;
+	private Bucket list;
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		emf = Persistence.createEntityManagerFactory("XtremePU");
+		emf = Persistence.createEntityManagerFactory("NonBucketListPU");
 	}
 
 	@AfterAll
@@ -32,7 +32,7 @@ public class ListTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		em = emf.createEntityManager();
-		list = em.find(List.class, 1);
+		list = em.find(Bucket.class, 1);
 	}
 
 	@AfterEach
@@ -48,9 +48,7 @@ public class ListTest {
 	}
 	
 	@Test
-	void test_Category_Mapping() {
-		
-		assertEquals("skydiving", list.getId());
+	void test_List_Entity() {
 		assertEquals(1, list.getId());
 	}
 
