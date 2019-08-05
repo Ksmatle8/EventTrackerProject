@@ -3,6 +3,11 @@
 Spring REST/JavaScript/Angular homework for Skill Distillery week 13 - 15
 
 ### Overview
+Completed REST on application.
+
+### Deployed application
+
+http://3.19.16.223:8080/NonBucketList/api/bucket
 
 #### REST API Endpoints
 
@@ -15,5 +20,13 @@ Spring REST/JavaScript/Angular homework for Skill Distillery week 13 - 15
 | DELETE | /api/nonbucketlist/{id} | Delete an event     |
 
 ### Technologies Used
+
+* Spring
+* Atom
+* Mac
+* Terminal
+* Ec2
+* Postman
+* Mysql Workbench
 
 ### Lessons Learned
