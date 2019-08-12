@@ -29,7 +29,7 @@ public class BucketServiceImpl implements BucketService {
 	public Bucket create(Bucket buck) {
 		return repo.saveAndFlush(buck);
 	}
-	
+
 	@Override
 	public Bucket update(int id, Bucket buck) {
 		Optional<Bucket> opt = repo.findById(id);
@@ -46,14 +46,14 @@ public class BucketServiceImpl implements BucketService {
 		}
 		return managedPost;
 	}
-	
+
 	@Override
-	public Boolean delete(int id) { 
+	public Boolean delete(int id) {
 		boolean deleted = false;
-		Optional<Bucket> opt =repo.findById(id);
-		if(opt.isPresent()) {
+		Optional<Bucket> opt = repo.findById(id);
+		if (opt.isPresent()) {
 			Bucket buck = opt.get();
-			if(buck.getId() == id) {
+			if (buck.getId() == id) {
 				repo.deleteById(id);
 				deleted = true;
 			}

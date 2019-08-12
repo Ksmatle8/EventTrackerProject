@@ -116,20 +116,6 @@ function displayBucket(obj) {
 		e.preventDefault();
 		deleteBucket(obj.id);
 	});
-	
-//	let uForm = document.createElement('form');
-//	uForm.name = 'updateForm';
-//	dataDiv.appendChild(form);
-//	let inputUpdate = document.createElement('input');
-//	inputUpdate.type = 'submit';
-//	inputUpdate.name = 'submit';
-//	inputUpdate.value = 'Update Bucket';
-//	form.appendChild(input);
-//	
-//	document.updateForm.addEventListener('submit', function(e) {
-//		e.preventDefault();
-//		updateBucket(obj.id);
-//	});
 }
 
 function listAllBuckets() {
